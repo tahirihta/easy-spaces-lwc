@@ -4,5 +4,5 @@
     fqn="selectObject"
 >
     <apiVersion>50.0</apiVersion>
-    <description>A Lightning Event Bundle</description>
+    <description>A Lightning Event Bundle - Modify Desciption</description>
 </AuraDefinitionBundle>
