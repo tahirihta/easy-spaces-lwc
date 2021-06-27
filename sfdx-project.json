@@ -19,7 +19,7 @@
             "path": "./es-base-code",
             "package": "ESBaseCodeLWC",
             "versionName": "Base Code LWC - Winter '21",
-            "versionNumber": "50.0.6.NEXT",
+            "versionNumber": "50.1.6.NEXT",
             "default": false,
             "dependencies": [
                 {
@@ -42,7 +42,7 @@
                 },
                 {
                     "package": "ESBaseCodeLWC",
-                    "versionNumber": "50.1.6.LATEST"
+                    "versionNumber": "50.0.6.LATEST"
                 },
                 {
                     "package": "ESBaseStylesLWC",
