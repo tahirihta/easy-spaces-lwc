@@ -13,7 +13,7 @@ jobs:
     quickbuild:
         name: QuickBuild the packages
         runs-on: ubuntu-latest
-        container: tahirihta/sfpowerscripts
+        container: dxatscale/sfpowerscripts
         steps:
             # Checkout the code
             - name: 'Checkout source code'
@@ -48,7 +48,7 @@ jobs:
     deploy:
         name: Deploy and Validate the packages
         runs-on: ubuntu-latest
-        container: tahirihta/sfpowerscripts
+        container: dxatscale/sfpowerscripts
         needs: quickbuild
         concurrency: deploy_dev
         steps:
@@ -89,7 +89,7 @@ jobs:
     build:
         name: Build Production Ready packages
         runs-on: ubuntu-latest
-        container: tahirihta/sfpowerscripts
+        container: dxatscale/sfpowerscripts
         needs: deploy
         concurrency:
            group: build_publish
@@ -126,7 +126,7 @@ jobs:
     publish:
         name: Publish artifacts to GitHub Packages
         runs-on: ubuntu-latest
-        container: tahirihta/sfpowerscripts
+        container: dxatscale/sfpowerscripts
         needs: build
         concurrency:
            group: build_publish
@@ -155,4 +155,4 @@ jobs:
 
             - name: Publish
               run: |
-                  sfdx sfpowerscripts:orchestrator:publish -d artifacts --npm --scope dxatscale --gittag --pushgittag
+                  sfdx sfpowerscripts:orchestrator:publish -d artifacts --npm --scope tahirihta --gittag --pushgittag
