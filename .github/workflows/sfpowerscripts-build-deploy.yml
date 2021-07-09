@@ -89,7 +89,7 @@ jobs:
     build:
         name: Build Production Ready packages
         runs-on: ubuntu-latest
-        container: dxatscale/sfpowerscripts
+        container: tahirihta/sfpowerscripts
         needs: deploy
         concurrency:
            group: build_publish
