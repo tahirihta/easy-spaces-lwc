@@ -13,7 +13,7 @@ jobs:
     quickbuild:
         name: QuickBuild the packages
         runs-on: ubuntu-latest
-        container: dxatscale/sfpowerscripts
+        container: tahirihta/sfpowerscripts
         steps:
             # Checkout the code
             - name: 'Checkout source code'
@@ -48,7 +48,7 @@ jobs:
     deploy:
         name: Deploy and Validate the packages
         runs-on: ubuntu-latest
-        container: dxatscale/sfpowerscripts
+        container: tahirihta/sfpowerscripts
         needs: quickbuild
         concurrency: deploy_dev
         steps:
@@ -126,7 +126,7 @@ jobs:
     publish:
         name: Publish artifacts to GitHub Packages
         runs-on: ubuntu-latest
-        container: dxatscale/sfpowerscripts
+        container: tahirihta/sfpowerscripts
         needs: build
         concurrency:
            group: build_publish
