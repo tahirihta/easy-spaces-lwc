@@ -1,25 +1,27 @@
 {
     "packageDirectories": [
         {
-            "path": "./es-base-objects",
+            "path": "es-base-objects",
             "package": "ESObjects",
             "versionName": "Base Objects - Winter '21",
-            "versionNumber": "50.1.7.NEXT",
+            "versionNumber": "50.0.6.NEXT",
             "default": false,
-            "assignPermSetsPostDeployment":[ "EasySpacesObjects" ]
+            "assignPermSetsPostDeployment": [
+                "EasySpacesObjects"
+            ]
         },
         {
-            "path": "./es-base-styles",
+            "path": "es-base-styles",
             "package": "ESBaseStylesLWC",
             "versionName": "Base Styles LWC - Winter '21",
             "versionNumber": "50.0.6.NEXT",
             "default": false
         },
         {
-            "path": "./es-base-code",
+            "path": "es-base-code",
             "package": "ESBaseCodeLWC",
             "versionName": "Base Code LWC - Winter '21",
-            "versionNumber": "50.1.6.NEXT",
+            "versionNumber": "50.0.6.NEXT",
             "default": false,
             "dependencies": [
                 {
@@ -29,12 +31,14 @@
             ]
         },
         {
-            "path": "./es-space-mgmt",
+            "path": "es-space-mgmt",
             "package": "ESSpaceMgmtLWC",
             "versionName": "Space Management App - Winter '21",
             "versionNumber": "50.0.5.NEXT",
             "default": true,
-            "assignPermSetsPostDeployment":[ "SpaceManagementApp" ],
+            "assignPermSetsPostDeployment": [
+                "SpaceManagementApp"
+            ],
             "dependencies": [
                 {
                     "package": "ESObjects",
@@ -55,9 +59,13 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "50.0",
     "packageAliases": {
-        "ESObjects": "0Ho2s0000000006CAA",
-        "ESBaseCodeLWC": "0Ho2s000000000LCAQ",
-        "ESBaseStylesLWC": "0Ho2s000000000GCAQ",
-        "ESSpaceMgmtLWC": "0Ho2s000000000QCAQ"
+        "ESObjects": "0Ho09000000XZjrCAG",
+        "ESBaseCodeLWC": "0Ho09000000XZk1CAG",
+        "ESBaseStylesLWC": "0Ho09000000XZjwCAG",
+        "ESSpaceMgmtLWC": "0Ho09000000XZk6CAG",
+        "ESObjects@50.0.6-1": "04t09000000NfOxAAK",
+        "ESBaseStylesLWC@50.0.6-1": "04t09000000NfP7AAK",
+        "ESBaseCodeLWC@50.0.6-1": "04t09000000NfPCAA0",
+        "ESSpaceMgmtLWC@50.0.5-1": "04t09000000NfTeAAK"
     }
 }
